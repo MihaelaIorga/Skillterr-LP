@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(-42deg, #302F76 0%, #161541 100%);
+}
+
+/* header navigation web */
+
+.topHeaderContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "hd hd hd";
+}
+
+.logo {
+    display: grid;
+    grid-area: hd;
+    grid-column: 1/3;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 100%;
+    max-width: 100%;
+    display: auto;
+    align-self: center;
+    padding-left: 5em;
+}
+
+.desktopVersion {
+    display: grid;
+    grid-area: hd;
+    grid-column: 2/3;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.universalVersion {
+    display: grid;
+    grid-area: hd;
+    grid-column: 3/3;
+    max-width: 100%;
+
+}
+
+.btn-join {
+    text-align: center;
+    margin-top: 3em;
+    color:white;
+    background: #F9755C;
+    width: 120px;
+    height: 50px;
+    float: right;
+    margin-right: 6em;
+    border: none;
+    border-radius: 30px;
+    font-weight: 400;
+font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.submit-join {
+    text-align: center;
+    color:white;
+    background: #F9755C;
+    width: 120px;
+    height: 50px;
+    float: right;
+    margin-right: 7.5em;
+    border: none;
+    border-radius: 30px;
+    font-weight: 400;
+font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.logo img{
+    max-width: 150px;
+}
+
+/* splash header retina display*/
+
+.IntroBox {
+    height: 80vh;
+    background-image: url("images/home-illustration@2x.png"), linear-gradient(0deg, #302F76 0%, #161541 100%);
+    background-size: cover;
+
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.50);
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 30px;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "headline headline";
+}
+
+.Headline {
+    height: 50%;
+    display: grid;
+    grid-area: headline;
+    grid-column: 1/2;
+    max-width: 100%;
+    text-align: center;
+
+    margin-top: 11em;
+}
+
+form {
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+form .email {
+    background: #383876;
+    border-radius: 40px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-weight: 400;
+font-size: 14px;
+color: #C9C9E3;
+letter-spacing: 1px;
+    padding-left: 30px;
+
+}
+
+input::placeholder {
+    font-weight: 400;
+font-size: 14px;
+color: #8584B0;
+letter-spacing: 1px;
+}
+
+
+form .submit-join {
+    margin-left: 20px;
+    margin-right: 0;
+
+}
+
+.Headline h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 2.67px;
+    text-align: center;
+    height: 90px;
+}
+
+.Headline-DetailBox h1 {
+    margin-top: 2.5em;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 2.67px;
+    text-align: center;
+    height: 90px;
+}
+
+.Headline-DetailBox h3 {
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-weight: 100;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: justify;
+    height: auto;
+}
+
+.Headline h3 {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 20px;
+}
+
+.PerksBox {
+    display: grid;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 3em;
+    column-gap: 180px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "perk perk perk";
+    align-content: space-between;
+}
+
+
+.Perk {
+   display: block;
+   justify-content: center;
+}
+
+.Perk h2 {
+    font-size: 24px;
+    color: #FF6441;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.Perk h3 {
+     font-weight: 100;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: center;
+    height: auto;
+    padding-bottom: 5em;
+    text-align: justify;
+}
+
+
+.perkImg {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.perkImg img {
+    width: 100%;
+    height: 250px;
+}
+
+
+.ConnectBox {
+    background: #1B1A4B;
+    box-shadow: inset 0 1px 50px 0 rgba(0,0,0,0.18);
+    padding-top: 6em;
+    height: 800px;
+}
+
+.ConnectBox h1 {
+        padding-left: 25%;
+    padding-right: 25%;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 2.67px;
+    text-align: center;
+    height: 90px;
+}
+
+.ConnectBox h3 {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 3.5em;
+    margin-bottom: 4em;
+    font-weight: 100;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: justify;
+    height: auto;
+}
+
+.FacebookConnect {
+    display: flex;
+}
+
+.card {
+  margin: auto;
+    background-image: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%);
+box-shadow: 0 0 30px 0 rgba(0,0,0,0.50);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.card:hover {
+  margin: auto;
+    background-color: #E9E9F3;
+box-shadow: 0 0 80px 0 rgba(0,0,0,0.50);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+}
+
+.card h1{
+font-size: 16px;
+color: #090909;
+letter-spacing: 0.3px;
+text-align: center;
+    margin-top: 30px;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+.card h2{
+font-size: 13px;
+color: #090909;
+    font-weight: 100;
+letter-spacing: 0.3px;
+text-align: center;
+    margin-top: 0px;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+
+
+.groupImg {
+  margin: auto;
+    background-image: url("images/Cover.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.facebook-btn {
+    margin-top: 20px;
+    text-align: center;
+    background: #405AE1;
+    width: 140px;
+    height: 50px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+
+}
+
+.facebook-btn:hover {
+    background: #4F69F0;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+}
+
+.facebook-btn a {
+    display: inline-flex;
+    color:white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.facebook-btn a p {
+    padding-left: 10px;
+}
