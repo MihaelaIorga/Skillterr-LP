@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 $email_address = filter_input(INPUT_POST, 'email_address');
 if (!empty($email_address)){
@@ -18,7 +18,7 @@ else {
 $sql = "INSERT INTO members (email_address)
 values ('$email_address')";
 if ($conn->query($sql)){
-echo "New record is inserted successfully";
+echo file_get_contents("personal_details.html");
 }
 else{
 echo "Error: " . $sql . "<br>".$conn->error;
