@@ -1,7 +1,7 @@
 <?php
 
-$email = filter_input(INPUT_POST, 'email');
-if (!empty($email)){
+$email_address = filter_input(INPUT_POST, 'email_address');
+if (!empty($email_address)){
 $host = "skillterr.com.mysql";
     $dbusername = "skillterr_com";
     $dbpassword = "NHjABpZVWVHNpnyr29YKutD2";
@@ -16,7 +16,7 @@ $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
     }
 else {
 $sql = "INSERT INTO members (email_address)
-values ('$email')";
+values ('$email_address')";
 if ($conn->query($sql)){
 echo "New record is inserted successfully";
 }
@@ -25,12 +25,6 @@ echo "Error: " . $sql . "<br>".$conn->error;
 }
 $conn->close();
 }
-
-
-
-
-
-
 }
 else{
     echo "Please fill in your email";
