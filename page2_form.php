@@ -12,6 +12,11 @@ session_start(); // Session starts here.
 
     </head>
     <body>
+<?php
+    if($_POST){
+      $_SESSION ['email_address'] = $_POST['email_address'];
+
+        ?>
 
         <header>
         <section class="topHeaderSection">
@@ -21,14 +26,6 @@ session_start(); // Session starts here.
                 </div>
             </div>
         </section>
-
-            <!---- Initializing Session for errors --->
- <?php
- if (!empty($_SESSION['error'])) {
- echo $_SESSION['error'];
- unset($_SESSION['error']);
- }
- ?>
 
             <section class="topIntroSection">
                 <div class="Step2Box">
@@ -46,7 +43,7 @@ session_start(); // Session starts here.
             </section>
 
             </header>
-
+<?php } ?>
         <footer>
         </footer>
     </body>
