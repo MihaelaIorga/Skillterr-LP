@@ -1,46 +1,82 @@
 <?php
 session_start();
 
+if( isset( $_SESSION['email_address'] )){
+$email_address = $_SESSION['email_address'];
+$first_name = filter_input(INPUT_POST, 'first_name');
+$last_name = filter_input(INPUT_POST, 'last_name');
+if (!empty($first_name))
+    if (!empty($last_name))
+
+{
 
 //connect to db
-$servername = "skillterr.com.mysql";
-$username = "skillterr_com";
-$password = "NHjABpZVWVHNpnyr29YKutD2";
+$host = "skillterr.com.mysql";
+$dbusername = "skillterr_com";
+$dbpassword = "NHjABpZVWVHNpnyr29YKutD2";
+$dbname = "skillterr_com";
 
 // Create connection
-$conn=mysqli_connect('skillterr.com.mysql','skillterr_com','NHjABpZVWVHNpnyr29YKutD2');
-mysqli_select_db($conn,'skillterr_com');
+$conn= new mysqli ('skillterr.com.mysql','skillterr_com','NHjABpZVWVHNpnyr29YKutD2', 'skillterr_com');
 
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if (mysqli_connect_error()){
+        die('Connect Error ('. mysqli_connect_error() .') '
+            . mysqli_connect_error());
+    }
+
+
+else {
+$sql = "INSERT INTO members (first_name, last_name, email_address)
+values ('$first_name', '$last_name', '$email_address')";
+if ($conn->query($sql)){
+echo file_get_contents("personal_details.html");
 }
-echo "Connected successfully";
-
-//REGISTER USER
-
-if (isset($_POST['submit_join'])) {
-
-    //receive all input values from the form
-  $first_name = ($_POST['first_name']);
-  $last_name = ($_POST['last_name']);
-    $email_address = ($_SESSION['email_address']);
+else{
+echo "Error: " . $sql . "<br>".$conn->error;
+}
+$conn->close();
+}
 }
 
-$query=mysqli_query($conn,"INSERT INTO members (email_address, first_name, last_name) VALUES ('$email_address', '$first_name', '$last_name')";);
 
-//let's run query
-        if($query($sql)){
-echo "Success";
+    if( isset( $_POST['skip'] ))
+
+{
+
+//connect to db
+$host = "skillterr.com.mysql";
+$dbusername = "skillterr_com";
+$dbpassword = "NHjABpZVWVHNpnyr29YKutD2";
+$dbname = "skillterr_com";
+
+// Create connection
+$conn= new mysqli ('skillterr.com.mysql','skillterr_com','NHjABpZVWVHNpnyr29YKutD2', 'skillterr_com');
+
+// Check connection
+if (mysqli_connect_error()){
+        die('Connect Error ('. mysqli_connect_error() .') '
+            . mysqli_connect_error());
+    }
+
+
+else {
+$sql = "INSERT INTO members (email_address)
+values ('$email_address')";
+if ($conn->query($sql)){
+echo file_get_contents("personal_details.html");
+}
+else{
+echo "Error: " . $sql . "<br>".$conn->error;
+}
+$conn->close();
+}
 }
     }
-        else{
-            echo "Error: " . $sql . "<br>".$conn->error;
-
-        }
 else{
-    echo "Please try-again";
+    echo "Please fill in email";
     die();
 }
-
 ?>
+
+

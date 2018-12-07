@@ -1,5 +1,10 @@
 <?php
 session_start(); // Session starts here.
+
+ //register session variables
+      $_SESSION ['email_address'];
+        //store posted values in the session
+        $_SESSION ['email_address'] = $_POST ['email_address']
 ?>
 <html lang="en">
     <head>
@@ -12,12 +17,7 @@ session_start(); // Session starts here.
 
     </head>
     <body>
-<?php
-        //register session variables
-      $_SESSION ['email_address'];
-        //store posted values in the session
-        $_SESSION ['email_address'] = $_POST['email_address']
-        ?>
+
 
         <header>
         <section class="topHeaderSection">
@@ -37,6 +37,7 @@ session_start(); // Session starts here.
                             <input class="first_name" type="text" placeholder="First Name" name="first_name"><br>
                             <input class="last_name" type="text" placeholder="Last Name" name="last_name"><br>
                             <input class="submit-join" type="submit" value="Welcome" name="submit-join">
+                            <input class="skip" type="submit" value="skip" name="skip">
                         </form>
                     </div>
                     <div class="Headline-Image"></div>

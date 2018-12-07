@@ -73,6 +73,10 @@ font-size: 14px;
     border-radius: 30px;
 }
 
+.ConnectBox {
+    padding-top: none;
+}
+
 
 .Headline2 {
     padding-top: 8em;
