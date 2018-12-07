@@ -56,6 +56,21 @@ font-size: 14px;
     letter-spacing: 1px;
 }
 
+.skip {
+    text-align: center;
+    color: #8584B0;;
+    background: none;
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 100;
+font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
 .logo img{
     max-width: 150px;
 }
