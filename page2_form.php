@@ -13,9 +13,7 @@ session_start(); // Session starts here.
     </head>
     <body>
 <?php
-    if($_POST){
       $_SESSION ['email_address'] = $_POST['email_address'];
-
         ?>
 
         <header>
@@ -32,7 +30,7 @@ session_start(); // Session starts here.
                     <div class="Headline2">
                     <h1>Let's get to know each other</h1>
                         <h3>Fill in your name and earn 10 coins to get you started when we launch</h3>
-                        <form class="personal_details" method="POST" action="connect.php">
+                        <form class="personal_details" method="POST" action="page3_form.php">
                             <input class="first_name" type="text" placeholder="First Name" name="first_name"><br>
                             <input class="last_name" type="text" placeholder="Last Name" name="last_name"><br>
                             <input class="submit-join" type="submit" value="Welcome">
