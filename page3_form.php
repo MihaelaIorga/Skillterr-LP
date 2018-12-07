@@ -39,7 +39,6 @@ $conn->close();
 }
 }
 
-
     if( isset( $_POST['skip'] ))
 
 {
@@ -72,10 +71,10 @@ echo "Error: " . $sql . "<br>".$conn->error;
 $conn->close();
 }
 }
-    }
+
 else{
-    echo "Please fill in email";
-    die();
+    echo file_get_contents("page2_form.php");
+    }
 }
 ?>
 
