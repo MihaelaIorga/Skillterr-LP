@@ -13,7 +13,10 @@ session_start(); // Session starts here.
     </head>
     <body>
 <?php
-      $_SESSION ['email_address'] = $_POST['email_address'];
+        //register session variables
+      $_SESSION ['email_address'];
+        //store posted values in the session
+        $_SESSION ['email_address'] = $_POST['email_address']
         ?>
 
         <header>
@@ -33,7 +36,7 @@ session_start(); // Session starts here.
                         <form class="personal_details" method="POST" action="page3_form.php">
                             <input class="first_name" type="text" placeholder="First Name" name="first_name"><br>
                             <input class="last_name" type="text" placeholder="Last Name" name="last_name"><br>
-                            <input class="submit-join" type="submit" value="Welcome">
+                            <input class="submit-join" type="submit" value="Welcome" name="submit-join">
                         </form>
                     </div>
                     <div class="Headline-Image"></div>
@@ -41,7 +44,6 @@ session_start(); // Session starts here.
             </section>
 
             </header>
-<?php } ?>
         <footer>
         </footer>
     </body>
