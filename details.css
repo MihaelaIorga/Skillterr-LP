@@ -99,7 +99,7 @@ font-size: 12px;
     text-align: center;
 }
 
-form {
+form .personal_details {
     height: auto;
     display: block;
 }
@@ -185,6 +185,35 @@ letter-spacing: 1px;
     padding-left: 2em;
 }
 
+
+    .submit-join {
+    text-align: center;
+    color:white;
+    background: #F9755C;
+    width: 120px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 400;
+font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.skip {
+    text-align: center;
+    color: #8584B0;;
+    background: none;
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 100;
+font-size: 12px;
+    letter-spacing: 1px;
+}
+
 .cancel a {
     display: grid;
     grid-area: hd;
@@ -204,7 +233,6 @@ letter-spacing: 1px;
 
     .Step2Box {
     height: auto;
-    background-image: url("images/home-illustration@2x.png"), linear-gradient(0deg, #302F76 0%, #161541 100%);
     background-size: cover;
 
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.50);
@@ -218,5 +246,69 @@ letter-spacing: 1px;
     padding-bottom: 100px;
 }
 
+.Headline2 {
+    padding-top: 8em;
+    max-width: 100%;
+    text-align: center;
+}
 
+    form .personal_details {
+    height: auto;
+    display: block;
+}
+
+    .Headline2 h1 {
+    font-weight: 700;
+    font-size: 2em;
+    color: #FFFFFF;
+    letter-spacing: 2.67px;
+    text-align: center;
+    height: auto;
+}
+
+    .Headline2 h3 {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: center;
+    height: auto;
+}
+
+form .first_name {
+    background: #383876;
+    border-radius: 40px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-weight: 400;
+font-size: 14px;
+color: #C9C9E3;
+letter-spacing: 1px;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+form .last_name {
+    margin-top: 10px;
+    background: #383876;
+    border-radius: 40px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-weight: 400;
+font-size: 14px;
+color: #C9C9E3;
+letter-spacing: 1px;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    font-weight: 400;
+font-size: 14px;
+color: #8584B0;
+letter-spacing: 1px;
+}
 }

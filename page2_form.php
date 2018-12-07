@@ -26,10 +26,8 @@ else{
         <title>Skillterr - Grow Together</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/826a7e3dce.css" media="all">
         <link rel="stylesheet" href="details.css">
-        <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" type="image/ico" href="images/fav-raw.ico">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
     </head>
     <body>
 
@@ -44,7 +42,7 @@ else{
         </section>
 
             <section class="topIntroSection">
-                <div class="IntroBox">
+                <div class="Step2Box">
                     <div class="Headline2">
                     <h1>Let's get to know each other</h1>
                         <h3>Fill in your name and earn 10 coins to get you started when we launch</h3>
@@ -57,7 +55,6 @@ else{
                             </div>
                         </form>
                     </div>
-                    <div class="Headline-Image"></div>
                 </div>
             </section>
 
