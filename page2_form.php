@@ -23,9 +23,10 @@ else{
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Swap Skills - Skillterr</title>
+        <title>Skillterrs grow together</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/826a7e3dce.css" media="all">
         <link rel="stylesheet" href="details.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" type="image/ico" href="images/fav-raw.ico">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
@@ -43,7 +44,7 @@ else{
         </section>
 
             <section class="topIntroSection">
-                <div class="Step2Box">
+                <div class="IntroBox">
                     <div class="Headline2">
                     <h1>Let's get to know each other</h1>
                         <h3>Fill in your name and earn 10 coins to get you started when we launch</h3>
