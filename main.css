@@ -11,7 +11,19 @@ body {
 /* header navigation web */
 
 
+.card h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 @media (min-width: 800px) {
+
+    span {
+        font-size: 40px;
+    }
+
+
 .topHeaderContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,12 +73,22 @@ body {
     justify-content: center;
 }
 
-nav a {
+
+.linknav {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
 }
+
+.active, .linknav:hover {
+    color: #F9755C;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+
 .universalVersion {
     display: grid;
     grid-area: hd;
@@ -255,7 +277,7 @@ form .submit-join {
     display: grid;
     margin-left: 8em;
     margin-right: 8em;
-    margin-top: 3em;
+    margin-top: 5em;
     column-gap: 180px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -263,6 +285,9 @@ form .submit-join {
     align-content: space-between;
 }
 
+    .ForthSection {
+         margin-bottom: 5em;
+    }
 
 .Perk {
    display: block;
@@ -398,12 +423,48 @@ text-align: center;
 
 }
 
+    .groupImg1 {
+  margin: auto;
+    background-image: url("images/start@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+        .groupImg2 {
+  margin: auto;
+    background-image: url("images/rocket@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+    .groupImg3 {
+    margin: auto;
+    background-image: url("images/shoutout@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
 .facebook-btn {
-    margin-top: 20px;
     text-align: center;
-    background: #405AE1;
+    background: none;
     width: 140px;
-    height: 50px;
+    height: auto;
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -412,22 +473,19 @@ text-align: center;
 }
 
 .facebook-btn:hover {
-    background: #4F69F0;
+    color: #E95033;
     transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
 }
 
 .facebook-btn a {
     display: inline-flex;
-    color:white;
+    color: #F9775A;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
-.facebook-btn a p {
-    padding-left: 10px;
-}
 }
 
 
@@ -481,8 +539,15 @@ text-align: center;
     justify-content: center;
 }
 
-nav a {
+.linknav {
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.active, .linknav:hover {
+    color: #F9755C;
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
@@ -603,7 +668,7 @@ form .submit-join {
 .Headline h1 {
 
     font-weight: 700;
-    font-size: 40px;
+    font-size: 1.5em;
     color: #FFFFFF;
     letter-spacing: 2.67px;
     margin-top:10%;
@@ -614,17 +679,23 @@ form .submit-join {
 
 .Headline2 h1 {
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #FFFFFF;
     letter-spacing: 2.67px;
     text-align: center;
     height: auto;
 }
 
+    .Headline-DetailBox {
+    margin-bottom: 4.5em;
+    height: auto;
+}
+
+
 .Headline-DetailBox h1 {
     margin-top: 2em;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #FFFFFF;
     letter-spacing: 2.67px;
     text-align: center;
@@ -670,7 +741,7 @@ form .submit-join {
     display: grid;
     margin-left: 2em;
     margin-right: 2em;
-    margin-top: 3em;
+    margin-top: 0.7em;
     column-gap: 0px;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -742,7 +813,7 @@ form .submit-join {
         padding-left: 25%;
     padding-right: 25%;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #FFFFFF;
     letter-spacing: 2.67px;
     text-align: center;
@@ -836,10 +907,45 @@ text-align: center;
 
 }
 
+    .groupImg1 {
+  margin: auto;
+    background-image: url("images/start@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    max-width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+    .groupImg2 {
+  margin: auto;
+    background-image: url("images/rocket@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    max-width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+    .groupImg3 {
+  margin: auto;
+    background-image: url("images/shoutout@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    max-width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
 .facebook-btn {
-    margin-top: 20px;
     text-align: center;
-    background: #405AE1;
+    background: none;
     width: 140px;
     height: 50px;
     border: none;
@@ -850,20 +956,19 @@ text-align: center;
 }
 
 .facebook-btn:hover {
-    background: #4F69F0;
+    color: #E95033;
     transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
 }
 
 .facebook-btn a {
     display: inline-flex;
-    color:white;
+    color: #F9775A;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
-.facebook-btn a p {
-    padding-left: 10px;
-}
+
+
 }

@@ -10,6 +10,11 @@ body {
 
 /* header navigation web */
 @media (min-width: 800px) {
+
+    span {
+        font-size: 40px;
+    }
+
 .topHeaderContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -259,7 +264,7 @@ font-size: 12px;
 
     .Headline2 h1 {
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #FFFFFF;
     letter-spacing: 2.67px;
     text-align: center;
@@ -311,4 +316,6 @@ font-size: 14px;
 color: #8584B0;
 letter-spacing: 1px;
 }
+
+
 }
