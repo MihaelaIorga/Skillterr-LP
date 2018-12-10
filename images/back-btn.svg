@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="15px" viewBox="0 0 10 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>back-btn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web-Skillterr" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Skillterr-LP-Dark" transform="translate(-111.000000, -2274.000000)" fill="#383876">
+            <g id="back-btn" transform="translate(111.000000, 2274.000000)">
+                <path d="M3.84094504,7.5 L9.6022488,2.15191731 C10.1325837,1.65961987 10.1325837,0.861450082 9.6022488,0.369223076 C9.07191387,-0.123074359 8.21214915,-0.123074359 7.68181422,0.369223076 L1.92043459,5.7173762 L1.57917832,6.03413132 C0.769608322,6.78557673 0.722489023,8.05102974 1.47393442,8.86059974 C1.50767989,8.89695544 1.54276621,8.93204313 1.57912057,8.96579003 L1.92043459,9.2826238 L7.68181422,14.6307769 C8.21207328,15.1230744 9.07191387,15.1230744 9.6022488,14.6307769 C10.1325837,14.1384795 10.1325837,13.3403801 9.6022488,12.8480827 L3.84094504,7.5 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

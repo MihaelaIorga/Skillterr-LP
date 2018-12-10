@@ -28,11 +28,11 @@ body {
 
 
 .ArticleImage {
-    height: 500px;
+    max-height: 500px;
     background-image: url("images/start@2x.png"), linear-gradient(0deg, #302F76 0%, #161541 100%);
     background-size: cover;
     background-position: center;
-    width: 50%;
+   max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0px;
@@ -42,12 +42,75 @@ body {
         "headline";
 }
 
+    .post {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "post post post post";
+}
+
+
+    .ForthSection {
+        display: grid;
+        grid-area: post;
+    grid-column: 2/2;
+    }
+
+    .facebook-share {
+        position: fixed;
+        display: grid;
+        grid-area: post;
+    grid-column: 1/1;
+        align-content: center;
+        margin-top: 35vh;
+        margin-left: 5em;
+        margin-right: auto;
+         list-style: none;
+    }
+
+    .facebook-share a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        color: #383876;
+
+    }
+
+    .facebook-share a i {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        font-size: 16px;
+        width: 60px;
+        height: 40px;
+        background-color: #F9775A;
+        border-radius: 30px;
+        color: white;
+    }
+
+    .facebook-share a i:hover {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        font-size: 16px;
+        width: 60px;
+        height: 40px;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,0.15);
+        background-color: #E95033;
+        transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+    }
 
     .article {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-            width: 45%;
+            width: 90%;
     border-radius: 0px;
         display: block;
         justify-content: flex-start;
@@ -75,17 +138,73 @@ body {
                text-align: left;
 }
 
+    .Headline-DetailBox h1 {
+
+    text-align: left !important;
+}
+
 }
 
 @media (max-width: 800px) {
 
 
+        .facebook-share {
+        background-color: white;
+        text-align: center;
+        width: 100vw;
+        height: 80px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+            list-style :none;
+
+    }
+
+
+    .facebook-share a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        color: #383876;
+
+    }
+
+    .facebook-share a i {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        font-size: 16px;
+        width: 60px;
+        height: 40px;
+        background-color: #F9775A;
+        border-radius: 30px;
+        color: white;
+    }
+
+    .facebook-share a i:focus {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        font-size: 16px;
+        width: 60px;
+        height: 40px;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,0.15);
+        background-color: #E95033;
+        transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+    }
+
 .ArticleImage {
-    height: 500px;
+    max-height: auto;
     background-image: url("images/start@2x.png"), linear-gradient(0deg, #302F76 0%, #161541 100%);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    max-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
     border-radius: 0px;
@@ -122,6 +241,5 @@ body {
     line-height: 35px;
     text-align: left;
 }
-
 
 }

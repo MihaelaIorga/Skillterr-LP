@@ -72,9 +72,9 @@ $conn->close();
 }
 }
 
-else{
-    echo file_get_contents("page2_form.php");
-    }
+if (isset($_POST['submit-join'])){
+echo file_get_contents("page2_form.php");
+}
 }
 ?>
 
