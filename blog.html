@@ -23,19 +23,19 @@
 }(document, 'script', 'facebook-jssdk'));</script>
         <header>
         <section class="topHeaderSection">
-            <div class="topHeader">
+            <div class="topHeader" id="myHeader">
                 <div class="topHeaderContent">
                     <div class="logo"><a href="index.html"><img src="images/Logo-white.png" alt="Logo Image"/></a></div>
                     <nav id="myDiv" class="desktopVersion">
                         <a class="linknav" href="index.html">About</a>
                         <a class="linknav active" href="blog.html">Blog</a>
                     </nav>
-
                 </div>
             </div>
         </section>
+        </header>
 
-
+<main>
             <section class="ForthSection">
                 <div class="DetailBox">
                     <div class="Headline-DetailBox">
@@ -106,12 +106,67 @@
                         </div>
                     </div>
                 </div>
+                <div class="PerksBox">
+                <div class="Perk">
+                    <div class="card">
+                            <div class="groupImg1"></div>
+                            <h1>How it all started</h1>
+                            <h2>“Great ideas come to those who sleep” - or wait, that’s the wrong quote or, is it really?</h2>
+                            <div class="facebook-btn"><a target="_blank" href="Blog_start.html"><p>Read more</p></a></div>
+
+                        </div>
+                    </div>
+
+                    <div class="Perk">
+                    <div class="card">
+                            <div class="groupImg2"></div>
+                            <h1>First time entrepreneurs</h1>
+                            <h2>“But, do we have what it takes to do this?” - This was the question we kept…</h2>
+                            <div class="facebook-btn"><a target="_blank" href="Blog_start.html"><p>Read more</p></a></div>
+
+                        </div>
+                    </div>
+
+                    <div class="Perk">
+                    <div class="card">
+                            <div class="groupImg3"></div>
+                            <h1>Should we let them know?</h1>
+                            <h2>We kept thinking about when should we tell everyone about our idea. Is it too early?…</h2>
+                            <div class="facebook-btn"><a target="_blank" href="Blog_start.html"><p>Read more</p></a></div>
+
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            </header>
+           </main>
 
         <footer>
         </footer>
+
+        <script>
+        //sticky header
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+        </script>
+
+         <script type="text/javascript" src="general.js"></script>
     </body>
-    <script type="text/javascript" src="general.js"></script>
+
 </html>

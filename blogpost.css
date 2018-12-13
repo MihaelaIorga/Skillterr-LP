@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     max-width: 100%;
@@ -24,7 +28,112 @@ body {
 }
 
 
+.sticky {
+  background-image: none;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.23) 0%, rgba(255,255,255,0.81) 63%, #FFFFFF 100%) !important;
+box-shadow: 0 0 30px 0 rgba(46,46,46,0.09);
+}
+
+
+
+
+    .post-details h1{
+font-size: 1.2em !important;
+color: #5F5FC4 !important;
+letter-spacing: 0.3px !important;
+text-align: left !important;
+        height: auto;
+    margin-top: 30px !important;
+    margin-left: 20px !important;
+   margin-right: 20px !important;
+    margin-bottom: 30px !important;
+}
+
+.post-details h2{
+font-size: 1em;
+color: #090909;
+    font-weight: 100;
+letter-spacing: 0.3px;
+text-align: left;
+    margin-top: 0px;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+
+.content h3 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color: #8584B0;
+}
+
+
+.cardwide-btn {
+    margin-bottom: 30px !important;
+}
+
+.cardwide-btn a {
+     text-align: left;
+    color: #F9775A;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+
+
+}
+
+    .cardwide-btn a:hover {
+    color: #E95033;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) transform;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1px;
+        text-align: left;
+        padding-left: 20px;
+}
+
 @media (min-width: 800px) {
+
+.card-wide {
+    width: 100%;
+    height: auto;
+    border: 0.5px grey solid;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cw cw";
+    margin-bottom: 30px;
+    }
+
+    .WideCardImg {
+        width: 90%;
+         height: inherit;
+    display: grid;
+    grid-area: 1/1;
+    /* width: 300px; */
+    background: none;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+
+    .WideCardImg img {
+            max-height: 100%;
+    position: absolute;
+    /* top: -9999px; */
+    left: -9999px;
+    right: -9999px;
+    /* bottom: -9999px; */
+    margin: auto;
+    }
 
 
 .ArticleImage {
@@ -40,6 +149,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
         "headline";
+    border-radius: 20px;
 }
 
     .post {
@@ -143,9 +253,43 @@ body {
     text-align: left !important;
 }
 
+
+
+
 }
 
 @media (max-width: 800px) {
+
+
+
+.card-wide {
+    width: 100%;
+    height: auto;
+    border: 0.5px grey solid;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 30px;
+    }
+
+    .WideCardImg {
+         height: 100%;
+    display: inherit;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+    .WideCardImg img {
+           width: 100%;
+       height: 100%;
+    /* top: -9999px; */
+    left: -9999px;
+    right: -9999px;
+    /* bottom: -9999px; */
+    margin: auto;
+    }
 
 
         .facebook-share {

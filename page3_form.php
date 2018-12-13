@@ -8,6 +8,7 @@ $last_name = filter_input(INPUT_POST, 'last_name');
 if (!empty($first_name))
     if (!empty($last_name))
 
+
 {
 
 //connect to db
@@ -39,8 +40,14 @@ $conn->close();
 }
 }
 
-    if( isset( $_POST['skip'] ))
+if (empty($first_name))
+    if (empty($last_name))
+         if (isset( $_POST['submit-join'] )) {
+echo file_get_contents("page2_form.php");
+}
 
+
+  if (isset( $_POST['skip'] ))
 {
 
 //connect to db
@@ -72,9 +79,8 @@ $conn->close();
 }
 }
 
-if (isset($_POST['submit-join'])){
-echo file_get_contents("page2_form.php");
-}
+
+
 }
 ?>
 

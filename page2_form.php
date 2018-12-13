@@ -40,7 +40,9 @@ else{
                 </div>
             </div>
         </section>
+        </header>
 
+        <main>
             <section class="topIntroSection">
                 <div class="Step2Box">
                     <div class="Headline2">
@@ -58,7 +60,7 @@ else{
                 </div>
             </section>
 
-            </header>
+            </main>
         <footer>
         </footer>
     </body>

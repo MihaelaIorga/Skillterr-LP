@@ -23,7 +23,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
         <header>
         <section class="topHeaderSection">
-            <div class="topHeader">
+            <div class="topHeader" id="myHeader">
                 <div class="topHeaderContent">
                     <div class="logo"><a href="index.html"><img src="images/Logo-white.png" alt="Logo Image"/></a></div>
                     <nav id="myDiv" class="desktopVersion">
@@ -34,7 +34,10 @@
                 </div>
             </div>
         </section>
+            </header>
 
+
+<main>
             <section class="topIntroSection">
                 <div class="IntroBox">
                     <div class="Headline">
@@ -142,12 +145,34 @@
                     </div>
                 </div>
             </section>
+    </main>
 
-            </header>
+
 
         <footer>
         </footer>
-        <script type="text/javascript" src="general.js"></script>
+                 <script type="text/javascript" src="general.js"></script>
+        <script>
+        //sticky header
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+        </script>
     </body>
 
 </html>
