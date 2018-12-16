@@ -166,7 +166,7 @@ text-align: left;
     grid-column: 2/2;
     }
 
-    .facebook-share {
+    .interaction {
         position: fixed;
         display: grid;
         grid-area: post;
@@ -292,17 +292,44 @@ text-align: left;
     }
 
 
-        .facebook-share {
-        background-color: white;
-        text-align: center;
-        width: 100vw;
-        height: 80px;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
-            list-style :none;
+        .interaction {
+               display: inline-grid;
+    /* background-color: blue; */
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
 
     }
+
+
+    .clap {
+    margin-bottom: 30px;
+    /* position: relative; */
+    outline: 1px solid transparent;
+    border-radius: 50%;
+    border: 1px solid #F9775A;
+    width: 60px;
+    height: 60px;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    .clap .clap--count-total {
+    position: absolute;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+    left: 0;
+    margin-top: 60px !important;
+    color: #383876;
+}
 
 
     .facebook-share a {
@@ -387,3 +414,68 @@ text-align: left;
 }
 
 }
+
+.clap {
+    margin-bottom: 30px;
+  position: relative;
+  outline: 1px solid transparent;
+  border-radius: 50%;
+  border: 1px solid #F9775A;
+  width: 60px;
+  height: 60px;
+  background: none;
+}
+.clap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    //border: 1px solid #F9775A;
+    width: 80px - 1px;
+    height: 80px - 1px;
+  }
+.clap:hover {
+   cursor: pointer;
+   border: 1px solid #E95033;
+   transition: border-color 0.3s ease-in;
+  }
+.clap:hover:after {
+    animation: shockwave 1s ease-in infinite;
+}
+
+.clap svg {
+    width: 25px;
+    fill: #F9775A;
+    stroke: #fff;
+    stroke-width: 1px;
+  }
+
+.clap svg.checked {
+    fill: #E95033;
+      stroke: #fff;
+      stroke-width: 1px;
+}
+.clap .clap--count {
+    position: absolute;
+    margin-top: -30px;
+    left: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    background: #E95033;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+.clap .clap--count-total {
+    position: absolute;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+    left: 0;
+    margin-top: -30px;
+    color: #383876;
+  }
